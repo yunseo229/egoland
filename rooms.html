@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rooms</title>
+ 
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  
+    <div class="letter-container" id="letterContainer">
+        <img id="letterImage" src="letter.png" alt="Letter" class="letter-image">
+    </div>
+
+   
+    <div class="popup">
+        <h1>Welcome <br></h1>
+        <p><span id="displayName"></span></p>
+        <p id="popupMessage" class="message-style1">ego land에 온 걸 환영해!</p>
+        <button class="okay-button">okay</button>
+    </div>
+
+    <div class="dark-overlay"></div>
+    <div class="container">
+        <button id="back-button" class="icon-button">
+            <span class="visually-hidden">Back</span>
+        </button>
+        <button id="toggle-button" class="icon-button">
+            <span class="visually-hidden">Toggle</span>
+        </button>
+        <div class="dark-overlay" id="overlay"></div>
+        <div id="spotlight" class="spotlight"></div>
+
+        <div class="grid">
+            <div class="room" id="living-room">
+                <div class="room-overlay"></div>
+                <div class="room-3d" style="background-image: url('3dliving.png');" data-video="livingroomvideo.mp4"></div>
+                <img class="room-image" src="living.png" alt="Living Room">
+            </div>
+            <div class="room" id="kitchen">
+                <div class="room-overlay"></div>
+                <div class="room-3d" style="background-image: url('3dkitch.png');" data-video="kitchenvideo.mp4"></div>
+                <img class="room-image" src="kitchen.png" alt="Kitchen">
+            </div>
+            <div class="room" id="bathroom">
+                <div class="room-overlay"></div>
+                <div class="room-3d" style="background-image: url('3dbath.png');" data-video="bathroomvideo.mp4"></div>
+                <img class="room-image" src="bathroom.png" alt="Bathroom">
+            </div>
+            <div class="room" id="playroom">
+                <div class="room-overlay"></div>
+                <div class="room-3d" style="background-image: url('3dplay.png');" data-video="playroomvideo.mp4"></div>
+                <img class="room-image" src="play.png" alt="Playroom">
+            </div>
+            <div class="room" id="princess-room">
+                <div class="room-overlay"></div>
+                <div class="room-3d" style="background-image: url('3dprin.png');" data-video="princessroomvideo.mp4"></div>
+                <img class="room-image" src="Princess.png" alt="Princess Room">
+            </div>
+        </div>
+    </div>
+
+
+    <audio id="bgm" autoplay loop>
+        <source src="bgm.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+      </audio>
+      
+
+    <script src="scripts2.js"></script>
+
+</body>
+</html>

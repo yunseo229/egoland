@@ -1,0 +1,69 @@
+* {
+    cursor: url('cursor.png') 16 16, auto !important;
+  }
+
+body {
+    margin: 0;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.background-image {
+    cursor: url('cursor.png') 16 16, auto !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('home.png') center/cover no-repeat;
+    z-index: 1;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0;
+    z-index: 2;
+    transition: opacity 20s ease-out;
+}
+
+.deco-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 9999;
+}
+
+.ending {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10000;
+    opacity: 0;
+    transition: opacity 2s ease-out, transform 120s linear; /* 속도를 60초로 조정 */
+}
+
+.show-credits {
+    opacity: 1;
+    transform: translateY(-1100%);
+}
+
+.credit-image {
+    width: 100%;
+    object-fit: contain;
+}
