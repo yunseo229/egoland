@@ -535,7 +535,8 @@
 }
 
 .letter-image {
-   transform: scale(1.6);
+transform-origin: center;  
+transform: scale(1.6);
   max-width: 80%;
   max-height: 80%;
   cursor: pointer;
